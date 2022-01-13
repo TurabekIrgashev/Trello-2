@@ -1,0 +1,68 @@
+#board {
+  background-image: linear-gradient(to bottom right, blue, #f197a6);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+#board ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#board .list {
+  border-radius: 3px;
+  background-color: #ebecf0;
+  width: 300px;
+  color: #172b4d;
+}
+#board .list .headList {
+  position: relative;
+}
+#board .list .headList .ellipse {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(280px);
+  z-index: 1;
+}
+#board .list .todo-body {
+  margin-top: 5px;
+}
+#board .list .todo-body li {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-top: 5px;
+  border-radius: 3px;
+  border-bottom: 1px solid #b2b9c5;
+  color: #40506d;
+}
+#board .list .tasksTodo .btn-checked i:last-child {
+  display: none;
+}
+#board .list .tasksTodo .btn-checked:hover i:first-child {
+  display: none;
+}
+#board .list .tasksTodo .btn-checked:hover i:last-child {
+  display: block;
+}
+#board .paragraph:hover {
+  background-color: #ced1da;
+}
+#board .addList {
+  background-color: rgba(250, 248, 248, 0.078);
+  border-radius: 3px;
+  width: 400px;
+}
+#board .addList i {
+  color: white;
+}
+#board .addList:hover {
+  background-color: rgba(255, 255, 255, 0.227);
+}
+#board input {
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */

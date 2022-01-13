@@ -1,0 +1,491 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+* ::-webkit-scrollbar {
+  width: 5px;
+}
+
+* ::-webkit-scrollbar-track {
+  background: #3351d8;
+}
+
+* ::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+}
+
+* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(65, 38, 171, 0.9);
+  color: white;
+}
+
+.fa-pencil {
+  color: #423905;
+}
+
+.fa-trash-alt {
+  color: #4e034e;
+}
+
+.fa-sign-in-alt {
+  color: #1c361c;
+}
+
+.logo img {
+  width: 300px;
+}
+
+header {
+  height: 60px;
+  background-color: rgba(65, 38, 171, 0.9);
+  color: white;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.438);
+          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.438);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header button {
+  color: #fff !important;
+}
+
+header button span {
+  color: white;
+}
+
+header button i {
+  color: white;
+}
+
+header #menu,
+header .headerSections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+
+header #menu img,
+header .headerSections img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #fff;
+}
+
+#users {
+  background-color: transparent !important;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+
+#usernameMenu {
+  margin-right: 20px;
+  font-size: 2rem;
+}
+
+#taskboardPage {
+  overflow-y: auto;
+  height: calc(100vh - 100px);
+}
+
+#board {
+  overflow: auto;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(blue), to(#f197a6));
+  background-image: linear-gradient(to bottom right, blue, #f197a6);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#board ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#board .list {
+  border-radius: 3px;
+  background-color: #ebecf0;
+  width: 300px;
+  color: #172b4d;
+}
+
+#board .list .headList {
+  position: relative;
+}
+
+#board .list .headList .ellipse {
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(280px);
+          transform: translateX(280px);
+  z-index: 1;
+}
+
+#board .list .todo-body {
+  margin-top: 5px;
+}
+
+#board .list .todo-body li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  margin-top: 5px;
+  border-radius: 3px;
+  border-bottom: 1px solid #b2b9c5;
+  color: #40506d;
+}
+
+#board .list .tasksTodo .btn-checked i:last-child {
+  display: none;
+}
+
+#board .list .tasksTodo .btn-checked:hover i:first-child {
+  display: none;
+}
+
+#board .list .tasksTodo .btn-checked:hover i:last-child {
+  display: block;
+}
+
+#board .paragraph:hover {
+  background-color: #ced1da;
+}
+
+#board .addList {
+  background-color: rgba(250, 248, 248, 0.078);
+  border-radius: 3px;
+  width: 400px;
+}
+
+#board .addList i {
+  color: white;
+}
+
+#board .addList:hover {
+  background-color: rgba(255, 255, 255, 0.227);
+}
+
+#board input {
+  border: none;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+#signupForm input,
+#signInForm input {
+  display: block;
+  width: 100%;
+  background-color: transparent !important;
+  border: none;
+  outline: none;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid #6e0b59;
+  color: #fff;
+}
+
+#signupForm input::-webkit-input-placeholder,
+#signInForm input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.445);
+}
+
+#signupForm input:-ms-input-placeholder,
+#signInForm input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.445);
+}
+
+#signupForm input::-ms-input-placeholder,
+#signInForm input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.445);
+}
+
+#signupForm input::placeholder,
+#signInForm input::placeholder {
+  color: rgba(255, 255, 255, 0.445);
+}
+
+#signContainer {
+  width: 500px;
+  height: 100vh;
+  color: white;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#welcome {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#groups {
+  background-color: rgba(49, 29, 129, 0.9);
+  color: white;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  min-width: 300px;
+  height: calc(100vh - 100px);
+  overflow: auto;
+  min-width: 250px;
+}
+
+#groups ul {
+  margin: 0;
+  padding: 0;
+}
+
+#groups li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#groups li button {
+  color: #fff;
+}
+
+#groups #newGroup {
+  background-color: blanchedalmond;
+  background: rgba(203, 195, 206, 0.3);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(66, 65, 65, 0.18);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#groups #newGroup i {
+  color: white;
+}
+
+#groups #newGroup ul li {
+  background-color: rgba(33, 19, 88, 0.9);
+}
+
+#groups #newGroup input {
+  width: 100%;
+  background-color: transparent !important;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  color: white;
+}
+
+#groups #newGroup input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#groups #newGroup input:-ms-input-placeholder {
+  color: #fff;
+}
+
+#groups #newGroup input::-ms-input-placeholder {
+  color: #fff;
+}
+
+#groups #newGroup input::placeholder {
+  color: #fff;
+}
+
+#members {
+  background-color: rgba(49, 29, 129, 0.9);
+  width: 300px;
+  height: calc(100vh - 100px);
+}
+
+#members #membersUl {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+}
+
+#members #membersUl li {
+  width: 100% !important;
+  margin: 5px 0;
+  padding: 0;
+  padding: 10px;
+}
+
+#members #membersUl li img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+#chatbody {
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#addForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #001c40 !important;
+  color: white !important;
+  border-radius: 10px !important;
+}
+
+#addForm input {
+  outline: none !important;
+  border: 0 !important;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+form {
+  gap: 20px;
+  border-radius: 10px;
+}
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #00346e;
+  border-radius: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+.right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.chatRight {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.btn {
+  background-color: #001c40;
+  color: white;
+  font-size: 18px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.profile-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.actionsHeader {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #0d0650;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  padding: 5px 10px;
+}
+/*# sourceMappingURL=main.css.map */
